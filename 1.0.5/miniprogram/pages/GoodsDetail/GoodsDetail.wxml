@@ -1,0 +1,30 @@
+<!--pages/GoodsDetail/GoodsDetail.wxml-->
+<!-- 顶部导航 -->
+<t-navbar class="custom-navbar" left-arrow title="商品详情" bind:go-back="onBack" />
+
+<!-- 图片区域 -->
+<image class="img" src="{{Shoplist.urlDetails}}" mode="aspectFill"/>
+
+<view class="det">
+  Details
+</view>
+<view class="infoGoods">
+  <view class="fri">
+    <view class="name">{{Shoplist.name}}</view>
+    <view class="time">有效期：{{Shoplist.time}}</view>
+  </view>
+
+  <view class="price">
+    <view class="text">¥{{Shoplist.price}}</view>
+  </view>
+</view>
+
+<view class="det">
+  Note
+</view>
+
+<view class="info">此卡享受活动价格，活动卡一旦售出不退不换</view>
+
+  
+<button class="buy" bindtap="attention">购买</button >
+

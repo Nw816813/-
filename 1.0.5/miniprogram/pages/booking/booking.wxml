@@ -1,0 +1,35 @@
+
+<!-- 抬头 -->
+<image class="img" src="https://636c-cloud1-4g08alwo068bf874-1317434842.tcb.qcloud.la/Group%2033.png?sign=d13417c11762f09da8d7e6cb1e072d5a&t=1680778562" mode="aspectFit"/>
+<view class="today">Today</view>
+<view class="date">{{y}}年{{m}}月{{d}}日 {{w}}</view>
+
+<!-- 课程轮播 -->
+<scroll-view scroll-y class="container">
+  <view class="container-head flex-row">
+    <scroll-view scroll-x class="container-head-sc" scroll-left="{{sleft}}" scroll-with-animation="true">
+      <view class="item {{currentTab == index ?'active':''}}" data-current="{{index}}" catchtap="handleTabChange" wx:key="id" wx:for="{{currentMonthDay}}" wx:for-index="index">{{item}} </view>
+    </scroll-view>
+  </view>
+</scroll-view>
+
+
+<view class="test" wx:for="{{timetable}}" wx:key="id">
+  <view>{{item.name}}</view>
+</view>
+
+<view class="boxing">
+  <view class="boxItem" wx:for="{{courseData}}" wx:key="index" catchtap="toDetail" data-state="{{item.state}}" data-id="{{item._id}}" >
+  <button class="yuyue" wx:if="{{!item.state}}">预约</button>
+  <button class="yuyue" wx:if="{{item.state}}" style="background: #7e7e7e;">已过期</button>
+    <view class="LBox">
+      <image class="itemImg" src="{{item.teacherAvatar}}" mode="widthFix"></image>
+      <text>{{item.teacherName}}</text>
+    </view>
+    <view class="CBox">
+      <text class="time">{{item.courseTime}}-{{item.courseTimeEnd}}</text>
+      <text class="special">{{item.courseIntroduce}}</text>
+      <text class="tag">{{item.courseTag}}</text>
+    </view>
+  </view>
+</view>

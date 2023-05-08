@@ -1,0 +1,180 @@
+.boxing{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin:40rpx 0rpx 20rpx;
+
+}
+.boxItem{
+  width: 90%;
+  height: 220rpx;
+  color: #fff;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  padding: 10rpx;
+  margin-bottom: 30rpx;
+  border: 1rpx solid #e5bf05;
+  border-radius: 10rpx;
+
+}
+.yuyue{
+  position: absolute;
+  right: 20rpx;
+  background: linear-gradient(90deg, #F18303 0%, #F94409 100%);
+  height: 50rpx !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28rpx;
+  color:#fff;
+  bottom: 10rpx;
+}
+.LBox{
+  width: 30%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.itemImg{
+  width: 130rpx;
+  height: 130rpx !important;
+  border-radius: 50%;
+  margin-bottom: 10rpx;
+}
+.CBox{
+  width: 70%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.CBox>text{
+  margin-bottom: 8rpx;
+}
+.special{
+  width: 100%;
+  height: 95rpx;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3; /* 指定显示文本的行数 */
+  overflow: hidden; /* 超出隐藏 */
+  font-size: 25rpx;
+}
+.time{
+  font-weight: bolder;
+  color: #ffffff;
+}
+.tag{
+  margin-top: 8rpx;
+  color: #ffffff;
+}
+.img{
+  width:180px;
+  height: 206px;
+  position: absolute;
+  left: 48%;
+  right: 23.73%;
+  top: 180rpx;
+}
+
+.today{
+  margin-top: 20%;
+  background: radial-gradient(106.53% 2268.31% at 100% 69.88%, #B0B0B0 0%, #FAFAFA 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+ 
+  
+  font-size: 60rpx;
+  font-weight: 500;
+  margin-left: 60rpx;
+}
+
+.date{
+  margin-top: 20rpx;
+  color: #ffffff;
+  font-size: 40rpx;
+  font-weight: 400;
+  margin-left: 60rpx;
+
+}
+
+
+
+.container-head-sc {
+  border-radius: 16rpx;
+  height: 80rpx;
+  color: #ffffff;
+  white-space: nowrap;
+  background: rgba(19, 21, 28, 0.2);
+  margin-top: 40rpx;
+  
+}
+
+.container-head-sc .item {
+  margin-left: 20rpx;
+  margin-right: 30rpx;
+  padding: 10rpx 20rpx;
+  min-width: 90rpx;
+  text-align: center;
+  line-height: 50rpx;
+  font-size: 36rpx;
+  display: inline-block;
+  height: 50rpx;
+}
+
+.container-head-sc .item{
+  /* 防止高度塌陷 */
+ vertical-align: top;
+}
+
+
+.container-head-sc .active {
+  color: #ffffff;
+  font-weight: 600;
+  background: #f55821;
+  border-radius: 4rpx;
+}
+
+/* swiper默认高度为150px */
+.container-swiper {
+  height: calc(100% - 110rpx);
+  background-color: #ffffff;
+}
+.container-swiper-sc {
+  height: 100%;
+ 
+}
+.container-swiper-sc .items {
+  padding: 0 2%;
+  width: 100%;
+  box-sizing: border-box;
+
+
+}
+.container-swiper-sc .items .item-img {
+  width: 30vw;
+  height: 30vw;
+  margin-right: 2.8%;
+  margin-bottom: 10rpx;
+  flex-shrink: 0;
+  
+}
+.container-swiper-sc .items .item-img:nth-child(3n+3) {
+  margin-right: 0;
+}
+/* 隐藏scroll-view的滚动条 */
+::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  color: transparent;
+}
+
+
+.test{
+  color: #ffffff;
+}

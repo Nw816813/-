@@ -1,0 +1,39 @@
+
+<!-- title -->
+
+<view class="titleBop">
+			<view class="title">May</view>
+			<view class="content">限时折扣</view>
+</view>
+
+
+<!-- banner -->
+<view class="titleTop">
+  <view class="title">May</view>
+  <view class="content">限时折扣</view>
+  <swiper indicator-dots indicator-color="rgba(255,255,255,0.5)"
+indicator-active-color="#fff" circular autoplay interval="5000" next-margin="20rpx" class="swiper" >
+  <swiper-item class="item" wx:for="{{banner}}" wx:key="index" >
+    <view class="box">
+      <image class="imgs" src="{{item.url}}" mode="aspectFit"></image>
+    </view>
+
+  </swiper-item>
+  </swiper>
+			
+</view>
+
+<!-- 第二个title -->
+
+<view class="line"></view>
+
+
+<!-- 块 -->
+<view class="newsbox" wx:for="{{newslist}}" wx:key="_id" catchtap="toDetail" data-id="{{item._id}}">>
+  <image class="img" src="{{item.url}}" mode="aspectFit"/>
+  <view class="newstitle">
+    <view class="title">{{item.title}}</view>
+    <view class="sort">{{item.content}}</view>
+    <view class="tap">点击了解详情</view>
+  </view> 
+</view>

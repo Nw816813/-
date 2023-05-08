@@ -1,0 +1,32 @@
+<!--pages/editUserInfo.wxml-->
+<view class="box">
+  <view class="title">
+    <text>完善个人信息</text>
+  </view>
+  <view class="title">
+    <text class="mini">为保证信息完整，请上传或允许获取微信头像昵称，否则将不允许登录系统</text>
+  </view>
+  <view class="label">
+    <view class="item sppp">
+      <text>头像:</text>
+      <button class="chooseAvatar" open-type="chooseAvatar" bindchooseavatar="chooseAvatar" plain="ture">
+        <image class="avatar" mode="widthFix" src="{{userAvatar}}"></image>
+      </button>
+    </view>
+  </view>
+  <view class="label">
+    <view class="item itemSp">
+      <text>昵称</text>
+      <form bindsubmit="formsubmit">
+        <input class="name" placeholder-style="color:#fff;" type="nickname" placeholder="请输入昵称" name="nickname" value="{{userNickName}}" bindinput="getName"/>
+        <button form-type="submit" class="submit">提交</button>
+      </form>
+    </view>
+  </view>
+  <view class="label">
+    <view class="item itemSPOP">
+      <text>电话:</text>
+      <input class="name" placeholder-style="color:#fff;" type="number" placeholder="请输入电话号码"  value="{{userPhone}}" bindinput="getPhone"/>
+    </view>
+  </view>
+</view>

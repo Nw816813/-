@@ -1,0 +1,15 @@
+<view class="box">
+  <view class="fixed" catchtap="jumpAdd">
+    <image src="https://i.52112.com/icon/256/20190509/39066/1858674.png" mode="widthFix" class="add"></image>
+    <text class="text sp">添加会员卡类型</text>
+  </view>
+  <view class="ITEM" wx:for="{{list}}" wx:key="index">
+    <image src="{{item.img}}" mode="widthFix" class="bg"></image>
+    <text class="text">卡类型：{{item.type}}</text>
+    <!-- <text class="text">到期时间:</text> -->
+    <view class="spBtn">
+      <button class="btnmini" type="primary"  catchtap="toEdit" data-id="{{item._id}}">编辑</button>
+      <button class="btnmini" type="warn" catchtap="toDelete" data-id="{{item._id}}">删除</button>
+    </view>
+  </view>
+</view>

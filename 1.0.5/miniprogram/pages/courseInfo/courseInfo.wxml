@@ -1,0 +1,20 @@
+<view class="fixed" catchtap="toAdd">
+  <image mode="widthFix" class="addIcon" src="https://i.52112.com/icon/256/20190509/39066/1858674.png"></image>
+  <text>添加课程</text>
+</view>
+<view class="boxing">
+  <view class="boxItem" wx:for="{{course}}" wx:key="index">
+    <button type="warn" class="yuyue warn" bindtap="toDel" data-_id="{{item._id}}">删除课程</button>
+  <button class="yuyue" bindtap="toEdit" data-_id="{{item._id}}">编辑课程</button>
+    <view class="LBox">
+      <image class="itemImg" src="{{item.teacherAvatar}}" mode="widthFix"></image>
+      <text>{{item.teacherName}}</text>
+    </view>
+    <view class="CBox">
+      <text class="time">开始时间: {{item.courseDate}} {{item.courseTime}} - {{item.courseTimeEnd}}</text>
+      <text class="special">课程简介：{{item.courseIntroduce}}</text>
+      <text class="tag">课程标签：{{item.courseTag}}</text>
+      <text class="tag">课程所需花费课时次数：{{item.courseNeed}}</text>
+    </view>
+  </view>
+</view>

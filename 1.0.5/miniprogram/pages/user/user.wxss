@@ -1,0 +1,272 @@
+/**index.wxss**/
+page{
+  padding-bottom: 10rpx;
+
+}
+
+.userInfo{
+  /* border: 1px solid red; */
+  margin-top: 270rpx;
+  height: 100rpx;
+  width: 100vw;
+  margin-bottom: 20rpx;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+.login{
+  position: absolute;
+  bottom: 0;
+  left: 110rpx;
+  width: 120rpx;
+  height: 45rpx !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20rpx;
+  background: rgba(255, 255, 255, 0.03);
+  box-shadow: inset 0px 0px 34.0148px rgba(255, 255, 255, 0.05), inset 0px 2.26765px 2.26765px rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(36.3611px);
+  color: #fff;
+}
+.edit{
+  left:240rpx;
+  width: 140rpx;
+  height: 45rpx !important;
+}
+.role{
+  left: 390rpx;
+  width: 200rpx;
+  height: 45rpx !important;
+}
+.avatar{
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 12rpx;
+  margin-right: 12rpx;
+}
+.all{
+  display: flex;
+  flex-direction: row;
+  color: #ffffff;
+  /* padding: 25px; */
+  align-items: center;
+  margin-top: 150rpx;
+  margin-left: 25px;
+}
+.all .name{
+  width: 206rpx;
+  height: 48rpx;
+  top: 24rpx;
+  font-weight: 500;
+  font-size: 40rpx;
+  margin-left: -45rpx;
+
+
+}
+.all .ticon{
+  margin-left: 200rpx;
+
+}
+
+
+
+.title{
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  width: 436rpx;
+  height: 160rpx;
+  margin-left: 50rpx;
+}
+
+.title text{
+  font-weight: 500;
+  font-size: 72rpx;
+  line-height: 80rpx;
+}
+
+.img{
+  width:240rpx;
+  height: 360rpx;
+  position: absolute;
+  left: 30rpx;
+  right: 23.73%;
+  top: 100rpx;
+}
+
+.box{
+  margin: 50rpx;
+  width: 651rpx;
+  height: 296rpx;
+  border-radius: 40rpx;
+  box-shadow: 0rpx 100rpx 200rpx -40rpx rgba(50, 50, 93, 0.25), 0px 60rpx 120rpx -60rpx rgba(0, 0, 0, 0.3), inset 0rpx -4rpx 12rpx rgba(10, 37, 64, 0.35);
+}
+
+
+.cardclass{
+  position: absolute;
+  color: #fff;
+  font-weight: 500;
+  font-size: 50rpx;
+  line-height: 48rpx;
+  margin-top: 80rpx;
+  margin-left: 50rpx;
+}
+.time{
+  position: absolute;
+  font-weight: 500;
+  font-size: 28rpx;
+  line-height: 48rpx;
+  margin-left: 50rpx;
+  margin-top: 160rpx;
+  color: #fff;
+}
+
+
+
+
+.box .imgcard{
+  width: 654rpx;
+  height: 296rpx;
+
+}
+
+
+
+
+.box1{
+  width: 660rpx;
+  height: 128rpx;
+  display: flex;
+  flex-direction: row;
+  margin-left: 48rpx;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.03);
+  box-shadow: inset 0rpx 0rpx 68.0296rpx rgba(255, 255, 255, 0.05), inset 0px 4rpx 4rpx rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(36.3611px);
+  border-radius: 30rpx;
+}
+
+.box1 .text{
+  margin-left: 60rpx;
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 32rpx;
+  line-height: 48rpx;
+
+}
+
+.box1 .num{
+  margin-left: 184rpx;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32rpx;
+  line-height: 48rpx;
+  color: #f55821;
+  text-align: right;
+}
+
+.box1 .ticon{
+  color: #ffffff;
+  margin-left: 30rpx;
+}
+
+
+.box1 image{
+  margin-left: 20rpx;
+}
+
+.box2{
+  width: 660rpx;
+  height: 128rpx;
+  display: flex;
+  flex-direction: row;
+  margin-left: 48rpx;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.03);
+  box-shadow: inset 0rpx 0rpx 68rpx rgba(255, 255, 255, 0.05), inset 0rpx 4rpx 4rpx rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(36.3611px);
+  border-radius: 30rpx;
+  margin-top: 40rpx;
+}
+
+.box2 .text{
+  margin-left: 60rpx;
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 32rpx;
+  line-height: 48rpx;
+
+}
+
+.box2 .num{
+  margin-left: 184rpx;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32rpx;
+  line-height: 48rpx;
+  color: #f55821;
+  text-align: right;
+}
+
+.box2 .ticon{
+  color: #ffffff;
+  margin-left: 30rpx;
+}
+
+.box2 image{
+  margin-left: 20rpx;
+}
+
+.box3{
+  width: 660rpx;
+  height: 128rpx;
+  display: flex;
+  flex-direction: row;
+  margin-left: 48rpx;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.03);
+  box-shadow: inset 0rpx 0rpx 68rpx rgba(255, 255, 255, 0.05), inset 0rpx 4rpx 4rpx rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(36.3611px);
+  border-radius: 30rpx;
+  margin-top: 40rpx;
+}
+
+.box3 .text{
+  margin-left: 60rpx;
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 32rpx;
+  line-height: 48rpx;
+
+}
+
+.box3 .num{
+  margin-left: 184rpx;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32rpx;
+  line-height: 48rpx;
+  color: #f55821;
+  text-align: right;
+}
+
+.box3 .ticon{
+  color: #ffffff;
+  margin-left: 30rpx;
+}
+
+.box3 image{
+  margin-left: 20rpx;
+}
+
+.test{
+  width: 100%;
+  position: absolute;
+  margin: 0;
+  height:640rpx;
+  opacity: 0.8;
+  z-index:-1;
+
+}

@@ -1,0 +1,57 @@
+<view class="box">
+  <view class="itemTeacher">
+    <text class="label">教师头像</text>
+    <view class="itemBox">
+      <view class="eachItem" wx:for="{{teacherAvatar}}" wx:key="index"  >
+        <image class="avatar" catchtap="selectAvatar" data-inx="{{index}}" src="{{item.fileID}}" mode="widthFix"></image>
+        <view class="itemCircle" wx:if="{{selectAvatarIndex == index}}">√</view>
+      </view>
+      <image class="avatar" catchtap="uploadImg" src="https://img.tukuppt.com/ad_preview/00/38/72/Q61TbWs94q.jpg!/fw/260" mode="widthFix"></image>
+    </view>
+  </view>
+
+
+  <view class="itemTeacherName">
+    <text class="label Sp">课程标签</text>
+    <view class="itemBox">
+      <view class="eachItem SPeachItem" wx:for="{{courseTag}}" wx:key="index">
+        <text class="labelName" catchtap="selectCourseTag" data-inx="{{index}}">{{item.tag}}</text>
+        <view class="itemCircle SPitemCircle" wx:if="{{selectCourseTagIndex == index}}">√</view>
+      </view>
+      <view class="eachItem SPeachItem">
+        <text class="labelName" catchtap="addTag">+Tag</text>
+      </view>
+    </view>
+  </view>
+
+
+  <view class="itemTeacherName">
+    <text class="label Sp">教师姓名</text>
+    <view class="itemBox">
+      <view class="eachItem SPeachItem" wx:for="{{teacherNameList}}" wx:key="index">
+        <text class="labelName" catchtap="selectTeacherName" data-inx="{{index}}">{{item.name}}</text>
+        <view class="itemCircle SPitemCircle" wx:if="{{selectTeacherNameIndex == index }}">√</view>
+      </view>
+      <view class="eachItem SPeachItem">
+        <text class="labelName"  catchtap="addTeacherName">+Name</text>
+      </view>
+    </view>
+  </view>
+
+  <view class="itemTeacherName">
+    <text class="label Sp">课程详情</text>
+    <view class="itemBox">
+      <view class="eachItem SPeachItem" wx:for="{{courseIntroduce}}" wx:key="index">
+        <text class="labelName" catchtap="selectCourseIntroduce" data-inx="{{index}}">{{item.introduce}}</text>
+        <view class="itemCircle SPitemCircle" wx:if="{{selectCourseIntroduceIndex == index }}">√</view>
+      </view>
+      <view class="eachItem SPeachItem">
+        <text class="labelName"  catchtap="addCourseIntroduce">+Introduce</text>
+      </view>
+    </view>
+  </view>
+
+  <view class="btnBox">
+    <button class="sure" catchtap="sureSubmit">确定</button>
+  </view>
+</view>

@@ -1,0 +1,129 @@
+/* pages/testhome.wxss */
+.titleBop{
+  padding: 50rpx;
+  margin-top: 20%;
+  flex-direction: column;
+  height: 50rpx;
+}
+
+.titleBop .title{
+  color: #010103;
+  width: 120rpx;
+  height: 60rpx;
+  font-size: 44rpx;
+  font-weight: 500;
+  font-family: 'Alibaba PuHuiTi';
+  background-color: #EDFB3C;
+  text-align: center;
+  border-radius: 5rpx;
+}
+
+.titleBop .content{
+  margin-top: 10rpx;
+  background: radial-gradient(106.53% 2268.31% at 100% 69.88%, #B0B0B0 0%, #FAFAFA 100%) ;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-size: 44rpx;
+  font-weight: 500;
+  font-family: 'Alibaba PuHuiTi';
+}
+
+.swiper{
+  width: 700rpx;
+  height: 700rpx;
+  margin-left: 30rpx;
+  margin-top: -30rpx;
+}
+
+.swiper .item{
+
+  display: flex;
+  justify-content: center;
+  width: 620rpx;
+  height: 700rpx;
+}
+
+.swiper .item .box{
+  width: 99.5%;
+  height: 100%;
+}
+
+.swiper .item .box .imgs{
+  border-radius: 10rpx;
+  width: 620rpx;
+  height: 700rpx;
+}
+
+
+.line{
+
+  background:#f55821;
+  height: 3rpx;
+  margin-top: 40rpx;
+
+  height: 3rpx;
+}
+
+/* 详情 */
+
+.newsbox{
+  margin: 30rpx 30rpx 40rpx;
+  width: 690rpx;
+  height: 250rpx;
+}
+
+
+
+.newsbox .img{
+  position: absolute;
+  width: 680rpx;
+  height: 250rpx;
+  opacity: 0.3; /* 0.5是透明度的值，取值范围是0~1 */
+  margin-left: -10rpx;
+
+
+}
+
+
+.newsbox .newstitle{
+  position: absolute;
+  width: 680rpx;
+  height: 200rpx;
+
+}
+
+.newsbox .newstitle .title{
+  color: #ffffff;
+  font-size: 48rpx;
+  font-weight: 500;
+  position: absolute;
+  
+  margin-left: 20rpx;
+
+}
+
+.newsbox .newstitle .sort{
+
+  color: #ffffff;
+  font-size: 20rpx;
+  margin-top: 90rpx;
+  font-weight: 500;
+  margin-left: 20rpx;
+
+
+
+
+}
+
+.newsbox .newstitle .tap{
+  color: #f55821;
+  font-size: 18rpx;
+  margin-left: 20rpx;
+  margin-top: 30rpx;
+
+}
+
+
+
+

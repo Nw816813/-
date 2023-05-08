@@ -1,0 +1,17 @@
+
+<view class="boxing">
+  <view class="boxItem" wx:for="{{course}}" wx:key="index">
+  <!-- <button class="yuyue" bindtap="toEdit" data-_id="{{item._id}}">编辑课程</button> -->
+    <view class="LBox">
+      <image class="itemImg" src="{{item.userAvatar}}" mode="widthFix"></image>
+      <text>{{item.userNickName}}</text>
+    </view>
+    <view class="CBox">
+      <text class="time">授课老师: {{item.teacherId}} </text>
+      <text class="time">开始时间: {{item.time}} </text>
+      <text class="special">课程简介：{{item.courseIntroduce}}</text>
+      <text class="tag">课程标签：{{item.courseTag}}</text>
+      <text class="tag">课程所需花费课时次数：{{item.courseNeed}}</text>
+    </view>
+  </view>
+</view>

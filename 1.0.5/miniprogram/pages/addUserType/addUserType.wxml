@@ -1,0 +1,36 @@
+<view class="box">
+  <view class="ITEM">
+    <view class="left">
+      <view class="titleInfo">会员卡背景图</view>
+      <view class="titleImg"><button class="upload" type="primary" catchtap="uploads">点击上传</button></view>
+    </view>
+    <view class="right">
+      <image mode="widthFix" class="bg" src="{{img}}"></image>
+    </view>
+  </view>
+
+  <view class="ITEM SP">
+    <view class="left">
+      <view class="titleInfo">会员类型</view>
+      <view class="titleImg spinput"><input value="{{type}}" class="input" type="text" placeholder="请填写会员类型" bindinput="getInput"></input></view>
+    </view>
+  </view>
+
+  <!-- <view class="ITEM SP">
+    <view class="left">
+      <view class="titleInfo">到期时间</view>
+      <view class="titleImg spinput">
+        <picker class="input" mode="date" value="{{date}}" start="1970-01-01" end="2035-01-01" bindchange="bindDateChange">
+          <view class="picker">
+            {{date}}
+          </view>
+        </picker>
+      </view>
+    </view>
+  </view> -->
+
+
+  <view class="item itemBtn">
+    <button class="login" catchtap="submit">保存</button>
+  </view>
+</view>

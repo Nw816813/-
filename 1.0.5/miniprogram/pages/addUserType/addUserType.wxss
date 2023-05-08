@@ -1,0 +1,100 @@
+.box {
+  width: 100%;
+  color: #fff;
+  padding-top: 50rpx;
+}
+
+.ITEM {
+  width: 90%;
+  margin-left: 5%;
+  border-bottom: 2rpx solid #19ecbf;
+  padding-bottom: 10rpx;
+  display: flex;
+  flex-direction: column;
+  height: 400rpx;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.left {
+  width: 100%;
+  height: 30%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  position: relative;
+}
+
+.titleInfo {
+  width: 30%;
+
+}
+
+.titleImg {
+  width: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.right {
+  width: 100%;
+  margin-top: 20rpx;
+  height: 70%;
+}
+
+.bg{
+  width: 100%;
+  height: 100% !important;
+}
+
+.SP {
+  height: auto !important;
+  margin-top: 30rpx;
+}
+
+.spinput {
+  width: 300rpx;
+}
+
+.input {
+  width: 300rpx;
+  height: 60rpx;
+  padding: 20rpx;
+  padding-left: 40rpx;
+  color: #fff;
+  border-radius: 20rpx;
+  border: 2rp solid #19ecbf;
+}
+
+.positions {
+  width: 400rpx;
+  height: 80rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  z-index: 999;
+  top: 10rpx;
+  left: 200rpx;
+}
+
+
+.itemBtn {
+  margin-left: 5%;
+  width: 90%;
+  margin-top: 100rpx;
+}
+
+.login {
+  width: 100%;
+  height: 65rpx !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20rpx;
+  background: linear-gradient(147.29deg, #86F0B1 -1.9%, #88C8EF 28.24%, #A0B1FD 62.69%, #F0B2E7 95.36%);
+  box-shadow: 0px 50px 100px -20px rgba(50, 50, 93, 0.25), 0px 30px 60px -30px rgba(0, 0, 0, 0.3), inset 0px -2px 6px rgba(10, 37, 64, 0.35);
+  color: #fff;
+}

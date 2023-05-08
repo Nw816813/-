@@ -1,0 +1,79 @@
+.boxing{
+  width: 100%;
+  margin: 50rpx 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.boxItem{
+  width: 90%;
+  height: 350rpx;
+  color: #fff;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  border: 1rpx solid #86FFCA;
+  padding: 10rpx;
+  border-radius: 15rpx;
+  box-shadow: 1rpx 1rpx 1rpx 1rpx #86FFCA;
+  margin-bottom: 50rpx;
+}
+.yuyue{
+  position: absolute;
+  right: 10rpx;
+  background-color: rgb(5, 70, 203);
+  height: 50rpx !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 25rpx;
+  color:#fff;
+  bottom: 10rpx;
+}
+.daoqi{
+  bottom: 80rpx;
+}
+.yuetongka{
+  bottom: 80rpx;
+}
+.LBox{
+  width: 30%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.itemImg{
+  width: 130rpx;
+  height: 130rpx !important;
+  border-radius: 50%;
+  margin-bottom: 10rpx;
+}
+.CBox{
+  width: 70%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.CBox>text{
+  margin-bottom: 8rpx;
+}
+.special{
+  width: 100%;
+  height: 95rpx;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3; /* 指定显示文本的行数 */
+  overflow: hidden; /* 超出隐藏 */
+  font-size: 25rpx;
+}
+.time{
+  font-weight: bolder;
+  color: #86FFCA;
+}
+.tag{
+  margin-top: 8rpx;
+  color: #86FFCA;
+}

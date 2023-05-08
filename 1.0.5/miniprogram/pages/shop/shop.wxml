@@ -1,0 +1,73 @@
+<!--pages/shop/shop.wxml-->
+
+<!-- 分类还没写 -->
+
+<view class="text">
+  <view class="title">限时折扣</view>
+
+</view>
+
+
+<!-- 商品轮播图 -->
+
+<view class="banner">
+  <swiper indicator-dots indicator-color="rgba(255,255,255,0.5)"
+  indicator-active-color="#fff" circular autoplay interval="4000">
+  <swiper-item wx:for="{{list}}" wx:key="index">
+    <image src="{{item.url}}"></image>
+  </swiper-item>
+  </swiper>
+</view>
+
+<!-- 文字标注 -->
+<view class="text">
+  <view class="title">会员卡分类</view>
+  <view class="all">view all</view>
+</view>
+
+<!-- 商品导航 -->
+<view class="page">
+  <!-- 导航条.tab太多的时候需要使用scrollview -->
+  <view class="navBar">
+    <block wx:for="{{tabs}}" wx:key="item">
+      <view id="{{index}}" class="navItem {{tabIndex == index ? 'active' : '' }}" bindtap="onTabClick">
+        <view class="navItemTitle">{{item}}</view>
+      </view>
+    </block>
+  </view>
+
+  <!-- 内容区域 -->
+  <view class="content_wrapper">
+    <!-- 第一个tab -->
+    <block wx:if="{{tabIndex == 0}}">
+      <view class="allGoods" wx:for="{{allGoods}}" wx:key="_id" >
+      
+        <image class="img" src="{{item.urlGoods}}" mode="aspectFill"/>
+        <view class="detail">
+          <view class="price">¥{{item.price}}</view>
+          <view class="name">{{item.name}}</view>
+        </view>
+        <button class="buy" catchtap="toDetail" data-id="{{item._id}}">购买</button>
+
+
+        
+      </view>
+    </block>
+
+    <!-- 第二个tab -->
+    <block wx:if="{{tabIndex == 1}}">
+      <view>次卡页面</view>
+    </block>
+
+    <!-- 第三个tab -->
+    <block wx:if="{{tabIndex == 2}}">
+      <view>通卡页面</view>
+    </block>
+  </view>
+</view>
+
+
+
+
+
+

@@ -1,0 +1,48 @@
+/* pages/recharPay.wxss */
+.pay{
+  color: #fff;
+}
+
+.box{
+  margin-left: 5vw;
+  width: 90vw;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding-top: 100rpx;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.item{
+  border: 1px solid #00b26a;
+  width: 150rpx;
+  padding: 20rpx;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 20rpx;
+  margin-right: 20rpx;
+  margin-bottom: 50rpx;
+}
+
+.active{
+  background: linear-gradient(147.29deg, #86F0B1 -1.9%, #88C8EF 28.24%, #A0B1FD 62.69%, #F0B2E7 95.36%);
+}
+
+.itemBtn{
+  margin-top: 100rpx;
+}
+
+.login{
+  width: 90%;
+  height: 65rpx !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20rpx;
+  background: linear-gradient(147.29deg, #86F0B1 -1.9%, #88C8EF 28.24%, #A0B1FD 62.69%, #F0B2E7 95.36%);
+  box-shadow: 0px 50px 100px -20px rgba(50, 50, 93, 0.25), 0px 30px 60px -30px rgba(0, 0, 0, 0.3), inset 0px -2px 6px rgba(10, 37, 64, 0.35);
+  color: #fff;
+}

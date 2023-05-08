@@ -1,0 +1,73 @@
+<!--index.wxml-->
+<view class="all">
+  <view class="userInfo">
+    <image class="avatar" mode="widthFix" src="{{currentUserInfo.userAvatar?currentUserInfo.userAvatar:'https://ts1.cn.mm.bing.net/th/id/R-C.91a98c87ee719c8d93fae53b2666d723?rik=i1fomqvSpnZGNQ&riu=http%3a%2f%2fbpic.588ku.com%2felement_pic%2f01%2f55%2f09%2f5657474daecbe02.jpg&ehk=ehi%2fb1N%2brynMsjEQKjtH0Lvrno7RRt3vu8Vgz1dQjHY%3d&risl=&pid=ImgRaw&r=0'}}"></image>
+    
+    <text>{{currentUserInfo.userNickName?currentUserInfo.userNickName:'请登录'}}</text>
+    <button class="login" catchtap="loginUser" wx:if="{{!currentUserInfo.userNickName}}">登录</button>
+    <button class="login" catchtap="toEdit" wx:if="{{currentUserInfo.userNickName}}">编辑</button>
+    <button class="login edit" catchtap="logoutOut"  wx:if="{{currentUserInfo.userNickName}}">退出登录</button>
+    <button class="login role" catchtap="toRole" wx:if="{{currentUserInfo.role == 1}}">管理员入口</button>
+  </view>
+  <!-- <view class="name">Name</view> -->
+
+
+
+</view>
+
+<image  class="test" src="https://636c-cloud1-4g08alwo068bf874-1317434842.tcb.qcloud.la/userbg.jpg?sign=44571e48c26f0a50a05b08f1ffdc9c95&t=1680854856" mode="aspectFill"/>
+
+
+<!-- <view class="title">
+  <text>Hello！</text>
+  <text>行动起来！</text>
+
+</view> -->
+
+<image class="img" src="https://636c-cloud1-4g08alwo068bf874-1317434842.tcb.qcloud.la/icons/Frame%20462.png?sign=bcd03db3d9f22d45f4c9ba63f98db86a&t=1680857514" mode="aspectFit"/>
+
+
+<!-- 会员卡大box -->
+
+<view class="box" wx:if="{{currentUserInfo.userNickName}}">
+  <view class="cardclass">{{newUserType}}</view>
+  <view class="time">有效期截止：{{!currentUserInfo.userNickName  ? '---' : newUserEndTime == "" ? '未配置有效期' : newUserEndTime}}</view>
+  <image class="imgcard" src="{{newUserBg}}" mode="aspectFill"/>
+
+
+</view>
+
+<!-- <view class="box1" style="margin-bottom: 40rpx;" catchtap="toRecharPay">
+  <t-image src="https://ts1.cn.mm.bing.net/th/id/R-C.4b7f6d11a3fa31fd34f04d361dd26ec6?rik=kO7o0PYXaF6HFw&riu=http%3a%2f%2fa1118.phobos.apple.com%2fus%2fr30%2fPurple%2fv4%2f18%2f0c%2fe9%2f180ce972-50a5-dd48-08a9-4e6e554b1ed1%2fmzl.jbxxgonw.png&ehk=fd%2b4FBWS8VnY%2febAgmS2n1xOd5RmKe%2bEGv%2fK%2fIRiKSM%3d&risl=&pid=ImgRaw&r=0" width="48" height="48" shape="round"  />
+  <view class="text">充值剩余次数</view>
+  <t-toast id="t-toast" />
+  <t-icon style="margin-left: 85px;" class="ticon" name="chevron-right-double" size="25" bindtap="showText"/>
+
+</view> -->
+
+<view class="box1">
+  <t-image src="{{imageSrc}}" width="48" height="48" shape="round"  />
+  <view class="text">剩余次数</view>
+  <view class="num">{{!currentUserInfo.userNickName? '---' : currentUserInfo.shenyucishu}}</view>
+  <t-toast id="t-toast" />
+  <t-icon class="ticon" name="chevron-right-double" size="25" bindtap="showText"/>
+
+</view>
+
+<view class="box2">
+  <t-image src="{{imageSrc1}}" width="48" height="48" shape="round"  />
+  <view class="text">上课次数</view>
+  <view class="num">{{!currentUserInfo.userNickName?'---' : currentUserInfo.shangkecishu}}</view>
+  <t-toast id="t-toast" />
+  <t-icon class="ticon" name="chevron-right-double" size="25" bindtap="showText"/>
+
+
+</view>
+
+<view class="box3" catchtap="jump">
+  <t-image src="{{imageSrc2}}" width="48" height="48" shape="round"  />
+  <view class="text">预约记录</view>
+  <view class="num">{{!currentUserInfo.userNickName?'---':currentUserInfo.shangkejilu}}</view>
+  <t-toast id="t-toast" />
+  <t-icon class="ticon" name="chevron-right-double" size="25" bindtap="showText"/>
+</view>

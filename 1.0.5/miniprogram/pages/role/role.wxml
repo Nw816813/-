@@ -1,0 +1,17 @@
+<view>
+  <view class="box3" catchtap="toUserInfo">
+    <view class="num">用户管理配置</view>
+  </view>
+
+  <view class="box3" catchtap="toCourseInfo">
+    <view class="num">课程管理配置</view>
+  </view>
+
+  <view class="box3" catchtap="toTodayCourse">
+    <view class="num">今日课程详情</view>
+  </view>
+
+  <view class="box3" catchtap="toUserType">
+    <view class="num">会员类型配置</view>
+  </view>
+</view>

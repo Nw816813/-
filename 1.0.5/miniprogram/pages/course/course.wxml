@@ -1,0 +1,68 @@
+<view class="boxing">
+  <view class="item">
+    <text class="label">课程老师头像：</text>
+    <image catchtap="uoloadAvatar" src="{{teacherAvatar !== '' ? teacherAvatar : 'https://ts1.cn.mm.bing.net/th/id/R-C.91a98c87ee719c8d93fae53b2666d723?rik=i1fomqvSpnZGNQ&riu=http%3a%2f%2fbpic.588ku.com%2felement_pic%2f01%2f55%2f09%2f5657474daecbe02.jpg&ehk=ehi%2fb1N%2brynMsjEQKjtH0Lvrno7RRt3vu8Vgz1dQjHY%3d&risl=&pid=ImgRaw&r=0'}}" mode="widthFix" class="avatar"></image>
+  </view>
+
+  <view class="item">
+    <text class="label">课程老师姓名：</text>
+    <picker bindchange="bindPickerTeacherChange" value="{{teacherNameArray[index].name}}" range="{{teacherNameArray}}" range-key="name">
+      <view class="picker">
+        {{teacherNameArray[index].name}}
+      </view>
+    </picker>
+    <!-- <input class="input" value="{{teacherName}}" id="teacherName" type="text" placeholder="课程老师姓名" placeholder-style="color:#fff" bindinput="getValue"></input> -->
+  </view>
+
+
+  <view class="item">
+    <text class="label">课程开始日期：</text>
+    <picker mode="date" value="{{courseDate}}" start="2023-01-01" end="2070-09-01" bindchange="bindDateChange">
+      <view class="input">
+        {{courseDate}}
+      </view>
+    </picker>
+  </view>
+
+  <view class="item">
+    <text class="label">课程具体时间段：</text>
+    <picker mode="time" value="{{courseTime}}" start="00" end="00" bindchange="bindTimeChange">
+      <view class="picker">
+        {{courseTime}}
+      </view>
+    </picker>
+    -
+    <picker mode="time" value="{{courseTimeEnd}}" start="00" end="00" bindchange="bindTimeChangeEnd">
+      <view class="picker">
+        {{courseTimeEnd}}
+      </view>
+    </picker>
+  </view>
+
+
+  <view class="item">
+    <text class="label">报名课程所需课时次数：</text>
+    <input class="input sp" value="{{courseNeed}}" id="courseNeed" type="text" placeholder="所需课时次数" placeholder-style="color:#fff" bindinput="getValue"></input>
+  </view>
+
+
+  <view class="item">
+    <text class="label">课程类型/关键词：</text>
+    <picker  bindchange="bindPickerCourseChange" value="{{courseTagArray[indexTwo].tag}}" range="{{courseTagArray}}" range-key="tag">
+      <view class="picker" style="width: 200rpx;">
+        {{courseTagArray[indexTwo].tag}}
+      </view>
+    </picker>
+    <!-- <input class="input sp" value="{{courseTag}}" id="courseTag" type="text" placeholder="类型/关键词" placeholder-style="color:#fff" bindinput="getValue" ></input> -->
+  </view>
+
+
+  <view class="item itemsp">
+    <text class="label labelsp">课程详情介绍：</text>
+    <textarea autoHeight="true" value="{{courseIntroduce}}" id="courseIntroduce" maxlength="-1" class="input over" placeholder="课程详情介绍" placeholder-style="color:#fff" bindinput="getValue"></textarea>
+  </view>
+
+  <view class="item itemBtn">
+    <button class="login" catchtap="submit">保存</button>
+  </view>
+</view>

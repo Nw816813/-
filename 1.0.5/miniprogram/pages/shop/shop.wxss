@@ -1,0 +1,153 @@
+/* pages/shop/shop.wxss */
+.example-search {
+
+  padding: 16rpx 32rpx;
+}
+
+
+.banner{ 
+   
+  width: 690rpx;
+  height: 350rpx;
+  padding: 20rpx 32rpx;
+  border-radius: 20rpx;
+
+  
+}
+.banner swiper{ 
+   
+  width: 690rpx;
+  height: 350rpx;
+  border-radius: 20rpx;
+}
+.banner image{ 
+   
+  width: 100%;
+  height: 350rpx;
+  border-radius: 20rpx;
+}
+
+.text{
+  color: #ffffff;
+  display: flex;
+
+}
+
+.text{
+  display: flex;
+  flex-direction: row;
+  padding: 20rpx 32rpx;
+  align-items: center;
+
+}
+.text .title{
+
+  background: radial-gradient(106.53% 2268.31% at 100% 69.88%, #B0B0B0 0%, #FAFAFA 100%) ;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-size: 40rpx;
+  font-weight: 500;
+  letter-spacing: 0.03em;
+}
+
+.text .all{
+  color: #f55821;
+  margin-left: 300rpx;
+}
+
+.navBar {
+  display: flex;
+  justify-content: space-around;
+  height: 60rpx;
+  position: relative;
+  color: #ffffff;
+  margin-top: 20rpx;
+}
+
+.navItem {
+  width: 200rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 4rpx solid transparent;
+  border-radius: 20rpx;
+  border-color: #bebebe;
+
+}
+
+.active {
+  color: #ffffff;
+
+  background-color: #f55821;
+  font-weight: 500;
+}
+
+
+
+.content_wrapper{
+  display: flex;
+  flex-wrap: wrap;
+  align-self: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 80rpx;
+
+}
+
+.content_wrapper .allGoods{
+  width: 300rpx;
+  height: 550rpx;
+
+  margin-top: -30rpx;
+  margin-left: 50rpx;
+
+
+
+}
+
+.content_wrapper .allGoods .img{
+  width: 300rpx;
+  height: 300rpx;
+  border-radius: 20rpx;
+}
+
+.content_wrapper .allGoods .detail .price{
+  width: 150rpx;
+  font-weight: 500;
+  font-size: 40rpx;
+  color: tomato;
+  margin-left: 20rpx;
+}
+
+
+.content_wrapper .allGoods .detail{
+  display: flex;
+  flex-direction: row;
+}
+
+.content_wrapper .allGoods .name{
+  color: #ffffff;
+  font-size: 30rpx;
+  margin-top: 5rpx;
+}
+
+
+.content_wrapper .allGoods .buy{
+  
+  border-radius: 15rpx;
+  margin-top: 20rpx;
+  width: 100%;
+  height: 60rpx;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 25rpx;
+  background: rgba(255, 115, 0, 0.747);
+  box-shadow: inset 0px 0px 34.0148px rgba(255, 255, 255, 0.05), inset 0px 2.26765px 2.26765px rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(36.3611px);
+  color: #ffffff;
+
+}

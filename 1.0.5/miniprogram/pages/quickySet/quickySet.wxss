@@ -1,0 +1,108 @@
+.box {
+  width: 100vw;
+  height: 100vh;
+}
+
+.btnBox {
+  margin-top: 60rpx;
+  margin-left: 5%;
+  width: 90%;
+  height: 50rpx;
+}
+
+.sure {
+  width: 200rpx;
+  height: 100rpx;
+  color: #fff;
+  background: linear-gradient(89.4deg, #D988FF -12.45%, #8B5CFF 117.63%);
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.SPitemCircle{
+  position: absolute;
+  right: -20rpx !important;
+  bottom: -10rpx !important;
+  background-color: #c77eff !important;
+}
+
+.itemTeacherName {
+  margin-top: 20rpx;
+  margin-left: 5%;
+  width: 90%;
+  height: 300rpx;
+  overflow: scroll;
+}
+
+.Sp {
+  display: block;
+  margin-bottom: 20rpx !important;
+}
+
+.SPeachItem {
+  margin-right: 60rpx;
+  margin-bottom: 20rpx;
+  position: relative;
+}
+
+.labelName {
+  color: #fff;
+  display: block;
+  padding: 40rpx;
+  height: 30rpx;
+  background-color: #8b5cff;
+  font-size: 30rpx;
+  font-weight: bold;
+  border-radius: 30rpx;
+}
+
+.itemTeacher {
+  margin-top: 20rpx;
+  margin-left: 5%;
+  width: 90%;
+  height: 300rpx;
+  overflow: scroll;
+}
+
+.label {
+  color: #fff;
+  font-weight: bold;
+  font-size: 40rpx;
+}
+
+.itemBox {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.eachItem {
+  position: relative;
+}
+
+.itemCircle {
+  position: absolute;
+  width: 50rpx;
+  height: 50rpx;
+  border-radius: 100%;
+  color: #fff;
+  background-color: #8b5cff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  bottom: 0;
+  right: 70rpx;
+}
+
+.avatar {
+  width: 150rpx;
+  height: 150rpx;
+  border-radius: 100%;
+  margin-right: 70rpx;
+  margin-top: 50rpx;
+}

@@ -1,0 +1,54 @@
+<!-- 导航栏 -->
+<t-navbar class="custom-navbar" left-arrow title="课程详情" bind:go-back="onBack" />
+
+<!-- 背景 -->
+<view class="box">
+
+  <view class="detail">
+    <view class="bigbox">
+      <image class="img2" src="https://636c-cloud1-4g08alwo068bf874-1317434842.tcb.qcloud.la/logo(%E9%80%8F%E6%98%8E).png?sign=35faf13c713082c5f55180b7e8e2c5e0&t=1680329415" mode="aspectFit" />
+      <!-- 需要传入教师图片 -->
+      <image class="img" src="{{courseInfo.teacherAvatar}}" mode="aspectFit" />
+      <!-- 需要传入教师姓名 -->
+      <view class="name">{{courseInfo.teacherName}}</view>
+      <!-- 需要传入教师舞种 -->
+      <view class="dance">{{courseInfo.courseTag}}</view>
+      <view class="prompt">预约该课程可扣除体验卷、课程卡次数1次（通卡忽略），会员卡余额或直接购买（¥160），可不晚于开课前2小时免费取消预约，如果课程卡未激活，请联系客服</view>
+
+    </view>
+
+    <view class="smallbox">
+      <view class="left">
+        <view class="classDetail">
+          <!-- 需要传入课程时间 -->
+          <view class="classtext">{{y}}年{{m}}月{{d}}日</view>
+          <view class="time">{{courseInfo.courseTime}}-{{courseInfo.courseTimeEnd}}</view>
+
+        </view>
+
+
+      </view>
+      <view class="right">
+        <view class="timedetail">
+          <!-- 需要传入会员卡类型 -->
+          <view class="cardtext">会员卡</view>
+          <view class="card">{{userTypeName}}</view>
+
+        </view>
+
+
+      </view>
+    </view>
+  </view>
+
+</view>
+
+
+<view class="boxBtn">
+  <!-- 取消按钮 -->
+  <!-- 返回列表需要返回课程列表页 -->
+  <t-button theme="light" size="large" variant="outline" shape="round" bindtap="onGoHome" class="btnBack">返回列表</t-button>
+  <!-- 确认按钮 -->
+  <t-button  theme="primary" size="large" shape="round" bindtap="showText">确认预约</t-button>
+  <!-- <t-button wx:if="{{isLastTime}}" theme="primary" size="large" shape="round">时间已过</t-button> -->
+</view>

@@ -1,0 +1,13 @@
+<!--pages/recharPay.wxml-->
+<view class="pay">
+  <view class="box">
+    <view catchtap="select" data-inx="{{index}}" class="item {{ selectIndex == index ? 'active' : ''}}" wx:for="{{list}}" wx:key="index">
+      <text>{{item.time}}/次</text>
+      <text>售价 ￥{{item.price}}</text>
+    </view>
+  </view>
+
+  <view class="itemBtn">
+    <button catchtap="submit" class="login" catchtap="submit">保存</button>
+  </view>
+</view>

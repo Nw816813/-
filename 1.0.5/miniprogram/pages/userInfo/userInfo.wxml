@@ -1,0 +1,19 @@
+
+<view class="boxing">
+  <view class="boxItem" wx:for="{{user}}" wx:key="index">
+    <button class="yuyue yuetongka" catchtap="jumpTo" data-openId="{{item.openId}}" data-time="{{item.daoqishijian}}">配置会员类型</button>
+    <!-- <button class="yuyue daoqi" catchtap="editTime" data-openId="{{item.openId}}" data-time="{{item.daoqishijian}}">配置到期时间</button> -->
+  <button class="yuyue" catchtap="edit" data-openId="{{item.openId}}" data-time="{{item.shenyucishu}}">配置剩余次数</button>
+    <view class="LBox">
+      <image class="itemImg" src="{{item.userAvatar}}" mode="widthFix"></image>
+      <text>{{item.userNickName}}</text>
+    </view>
+    <view class="CBox">
+      <text class="time">手机号:{{item.userPhone}}</text>
+      <text class="time">到期时间:{{item.daoqishijian}}</text>
+      <text class="time">剩余次数:{{item.shenyucishu}}</text>
+      <text class="time">上课次数:{{item.shangkecishu}}</text>
+      <text class="tag">角色:{{item.role == 1 ? '管理员' : '普通用户'}}</text>
+    </view>
+  </view>
+</view>

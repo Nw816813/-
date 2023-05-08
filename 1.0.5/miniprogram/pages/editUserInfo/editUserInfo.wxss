@@ -1,0 +1,86 @@
+/* pages/editUserInfo.wxss */
+.box{
+  margin-top: 200rpx;
+  width: 100vw;
+  height: 800rpx;
+}
+
+.SP{
+  margin-top: 200rpx;
+}
+
+.submit{
+  position: absolute;
+  bottom: 400rpx;
+  left: 80rpx;
+  width: 620rpx;
+  height: 85rpx !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 35rpx;
+  background: linear-gradient(147.29deg, #86F0B1 -1.9%, #88C8EF 28.24%, #A0B1FD 62.69%, #F0B2E7 95.36%);
+  box-shadow: 0px 50px 100px -20px rgba(50, 50, 93, 0.25), 0px 30px 60px -30px rgba(0, 0, 0, 0.3), inset 0px -2px 6px rgba(10, 37, 64, 0.35);
+  color: #fff;
+}
+
+.title,.label{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  margin-bottom: 20rpx;
+}
+
+.label{
+  margin-top: 100rpx;
+}
+
+.item{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-right: 230rpx;
+  width: 500rpx;
+}
+
+.sppp{
+  display: flex !important;
+  justify-content: flex-end !important;
+  padding-left: 150rpx;
+}
+
+.itemSPOP{
+  margin-right: -30rpx;
+
+}
+
+.itemSp{
+  margin-right: -20rpx;
+}
+
+.name{
+  border-radius: 12rpx;
+  margin-left: 12rpx;
+  border: 1px solid #e6e6e6;
+  padding-left: 10rpx;
+}
+
+.avatar{
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 12rpx;
+  margin-left: -33rpx;
+}
+
+.chooseAvatar{
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 12rpx;
+  border: none !important;
+  margin-left: 12rpx;
+}
+
+.mini{
+  font-size: 20rpx;
+}

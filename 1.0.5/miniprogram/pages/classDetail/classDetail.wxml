@@ -1,0 +1,40 @@
+<!-- 课程详情页 -->
+<!-- 导航栏 -->
+<t-navbar class="custom-navbar" left-arrow title="课程详情" bind:go-back="onBack" />
+
+<!-- 主题图片对应老师 -->
+<image class="img" src="{{courseDetail[0].teacherBG}}" mode="aspectFit"/>
+
+<!-- 背景图片 -->
+<view class="box">
+  <view class="classdetail">
+    <view class="time">{{courseDetail[0].courseDate}}  {{courseDetail[0].courseTime}} - {{courseDetail[0].courseTimeEnd}}</view>
+    <view class="info">
+      <view class="name">{{courseDetail[0].teacherName}}</view>
+      <view class="dance">{{courseDetail[0].courseTag}}</view>
+    </view>
+  </view>
+
+  <!-- 头像 -->
+  <t-avatar-group class = "imgs" max="{{pics.length}}" collapseAvatar="+{{pics.length}}" size="50rpx">
+   <t-avatar size="50rpx" wx:for="{{pics}}" wx:for-item="pic" wx:key="index" image="{{pic}}" />
+  </t-avatar-group>  
+  <view class="detailTilte">
+  预约规则 
+  </view>
+  <view class="detail">
+    <text>提前预约课程，按照课程时间上课</text>
+    <text>取消预约需提前2小时</text>
+    <text>若未提前取消课时将自动划扣</text>
+  
+  
+  </view>
+
+
+</view>
+
+<!-- 预约按钮 -->
+<view class="button-wrapper">
+  <t-button wx:if="{{!isBook}}" theme="primary" size="large" block class="external-class" style="width: 100%" bindtap="navigateToPage" disabled="{{isBook}}">预约该课程</t-button>
+  <t-button wx:if="{{isBook}}" theme="primary" size="large" block class="external-class" style="width: 100%"  disabled="{{isBook}}">您已预约此课程</t-button>
+</view>

@@ -1,0 +1,66 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/quickySet/quickySet",
+    "pages/booking/booking",
+    "pages/shop/shop",
+    "pages/user/user",
+    "pages/newsDetail/newsDetail",
+    "pages/editUserInfo/editUserInfo",
+    "pages/role/role",
+    "pages/userInfo/userInfo",
+    "pages/courseInfo/courseInfo",
+    "pages/course/course",
+    "pages/classDetail/classDetail",
+    "pages/Scheduled/Scheduled",
+    "pages/bookHistory/bookHistory",
+    "pages/todayCourse/todayCourse",
+    "pages/recharPay/recharPay",
+    "pages/userType/userType",
+    "pages/addUserType/addUserType",
+    "pages/oneUserType/oneUserType",
+    "pages/GoodsDetail/GoodsDetail"
+  
+  ],
+  "window": {
+    "backgroundColor": "#141414",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#141414",
+    "navigationBarTitleText": "BIUBIUDANCESTUDIO",
+    "navigationBarTextStyle": "white"
+  },
+  "sitemapLocation": "sitemap.json",
+  "usingComponents": {},
+  "tabBar": {
+    "color": "#393939",
+    "selectedColor": "#f55821",
+    "backgroundColor": "#0a0d0e",
+    "borderStyle": "black",
+    "list": [
+      {
+        "selectedIconPath": "images/icon/homess.png",
+        "iconPath": "images/icon/homes.png",
+        "pagePath": "pages/home/home",
+        "text": "首页"
+      },
+      {
+        "selectedIconPath": "images/icon/statss.png",
+        "iconPath": "images/icon/stat.png",
+        "pagePath": "pages/booking/booking",
+        "text": "课程"
+      },
+      {
+        "selectedIconPath": "images/icon/cartss.png",
+        "iconPath": "images/icon/cart.png",
+        "pagePath": "pages/shop/shop",
+        "text": "商城"
+      },
+      {
+        "selectedIconPath": "images/icon/profiless.png",
+        "iconPath": "images/icon/profile.png",
+        "pagePath": "pages/user/user",
+        "text": "我的"
+      }
+    ]
+  }
+}
